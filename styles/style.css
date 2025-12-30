@@ -51,6 +51,7 @@
 
 /* cover */
 .cover {
+  position: relative;
   padding: 173px 50px 50px 50px;
   color: #fff;
   background-color: #a7a7a7;
@@ -58,6 +59,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .cover__title {
@@ -118,7 +130,7 @@
 }
 
 .lots__card-list-item {
-  flex: 1 1 0; /* растягиваться поровну, игнорируя 430px чтобы лишнаяяя карточка не вылетала */
+  width: calc((100% - 50px) / 3); /* 2 gap'а по 25px = 50px */
   min-height: 450px;
 }
 
@@ -148,6 +160,17 @@
   color: #fff;
 }
 
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
 .card_type_film,
 .card_type_book,
 .card_type_picture {
@@ -175,6 +198,7 @@
   line-height: 120%;
   text-decoration: underline;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .card__text {
@@ -182,6 +206,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
+  z-index: 2;
 }
 
 /* about */
