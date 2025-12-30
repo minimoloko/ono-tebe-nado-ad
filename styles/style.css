@@ -1,1 +1,48 @@
 /* место для вашего кода */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+}
+.contacts {
+  list-style-type: none;
+
+}
+.headerNav {
+}
+.headerAbout {
+  display: flex;
+  justify-content: center;
+  list-style-type: circle ;
+}
+.cover {
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.coverTitle {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 100px;
+  letter-spacing: 40%;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.description {
+  display: flex;
+}
+.descriptionText {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.descriptionButton {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid #FFF;
+}
