@@ -81,20 +81,31 @@
   font-size: 100px;
   line-height: 100%;
   text-transform: uppercase;
+  z-index: 20;
+  position: relative;
+  white-space: 30px;
 }
 
 .cover__title span {
   display: block;
 }
 
-.cover__title span:nth-child(1) { text-align: left; }
-.cover__title span:nth-child(2) { text-align: center; }
-.cover__title span:nth-child(3) { text-align: right; }
+.cover__title span:nth-child(1) { 
+  text-align: left; 
+}
+.cover__title span:nth-child(2) { 
+  text-align: center; 
+}
+.cover__title span:nth-child(3) { 
+  text-align: right; 
+}
 
 .cover__description {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 20;
+  position: relative;
 }
 
 .cover__description-text {
